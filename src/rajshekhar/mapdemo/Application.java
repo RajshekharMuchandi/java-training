@@ -1,4 +1,4 @@
-package mapdemo;
+package rajshekhar.mapdemo;
 
 import java.util.ArrayList;
 import java.util.HashSet;

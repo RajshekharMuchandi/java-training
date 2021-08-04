@@ -1,4 +1,4 @@
-package exceptions;
+package rajshekhar.exceptions;
 
 import java.io.*;
 
