@@ -1,4 +1,4 @@
-package sample;
+package rajshekhar.sample;
 
 public class ListDemo extends Object{
 
