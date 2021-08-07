@@ -1,12 +1,13 @@
-package rajshekhar.sort.comparable;
+package rajshekhar.sort.comparator;
 
 import rajshekhar.sort.model.Student;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
-public class ComparableDemo {
+public class ComparatorDemo {
 
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
@@ -50,10 +51,20 @@ public class ComparableDemo {
 
         System.out.println("Before sort : " +students);
 
-        Collections.sort(students);
+        Collections.sort(students, new MarksComparator());
+        System.out.println("Marks After sort : " +students);
+
+        Collections.sort(students, new FavoriteSubjectComparator());
+        System.out.println("Fav subject After sort : " +students);
+
+        // anonymous inner class
+        Collections.sort(students, new Comparator<Student>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+                return o1.getStudentName().compareTo(o2.getStudentName());
+            }
+        });
         System.out.println("After sort : " +students);
 
     }
-
-
 }

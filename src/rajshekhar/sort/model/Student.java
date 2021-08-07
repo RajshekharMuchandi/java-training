@@ -1,4 +1,4 @@
-package rajshekhar.sort.comparable;
+package rajshekhar.sort.model;
 
 public class Student implements Comparable<Student>{
 
