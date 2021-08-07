@@ -1,4 +1,4 @@
-package rajshekhar.sort;
+package rajshekhar.sort.comparable;
 
 import java.util.ArrayList;
 import java.util.Collections;
